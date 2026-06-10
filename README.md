@@ -75,5 +75,6 @@ these proofs never holds funds or signs a mainnet transaction.
 
 ## Credit
 
-[ForgottenETH](https://forgotteneth.com) and [banteg](https://github.com/banteg) built the reference
-for this problem space (157k+ ETH mapped). This repo is an additive contribution in the same spirit.
+[ForgottenETH](https://forgotteneth.com) — built by [@3pa15 / aaaaaaaaaaway](https://x.com/3pa15)
+(`forgotten-eth.eth`), with a CLI by [banteg](https://github.com/banteg) — is the reference for this
+problem space (157k+ ETH mapped). This repo is an additive contribution in the same spirit.

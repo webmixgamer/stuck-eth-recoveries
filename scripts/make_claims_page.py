@@ -24,7 +24,7 @@ import sys
 import datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REPO = "github.com/webmixgamer/white-hat-recovery-agent"  # PRIVATE today; make public to publish
+REPO = "github.com/webmixgamer/stuck-eth-recoveries"  # public proofs repo
 
 
 def main(argv):
@@ -94,7 +94,7 @@ def main(argv):
         L.append(f"| {i} | `{o['address']}` | {o['eth']:.4f} |")
     L.append("")
     L.append("## Verify everything yourself")
-    L.append(f"- Fork-proof + tooling (open source): `{REPO}` *(make public before publishing this page)*")
+    L.append(f"- Fork-proof + tooling (open source): `{REPO}`")
     L.append(f"- Fork-proof test: `{pkg.get('fork_proof','(see repo)')}`")
     L.append("- This recovery is **owner-signs / no-custody**: we never hold or move your funds; you sign your own claim.")
     L.append("")

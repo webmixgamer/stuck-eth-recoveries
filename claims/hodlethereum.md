@@ -33,7 +33,7 @@
 | 11 | `0x16882f55ef843d062ce799805af50cda4240be52` | 0.0000 |
 
 ## Verify everything yourself
-- Fork-proof + tooling (open source): `github.com/webmixgamer/white-hat-recovery-agent` *(make public before publishing this page)*
+- Fork-proof + tooling (open source): `github.com/webmixgamer/stuck-eth-recoveries`
 - Fork-proof test: `test/HodlEthereumRefund.t.sol`
 - This recovery is **owner-signs / no-custody**: we never hold or move your funds; you sign your own claim.
 

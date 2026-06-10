@@ -1,6 +1,6 @@
 # Verified unclaimed-refund claims — Ahoolee Token Sale (2017)
 
-**Contract:** [`0x575cb87ab3C2329A0248C7d70e0ead8E57f3e3F7`](https://etherscan.io/address/0x575cb87ab3C2329A0248C7d70e0ead8E57f3e3F7) · **Stuck balance:** 191.5095 ETH · **Unclaimed owners:** 106 · **Recoverable:** 188.0495 ETH · *as of 2026-06-02*
+**Contract:** [`0x575cb87ab3C2329A0248C7d70e0ead8E57f3e3F7`](https://etherscan.io/address/0x575cb87ab3C2329A0248C7d70e0ead8E57f3e3F7) · **Stuck balance:** 191.5095 ETH · **Unclaimed owners:** 106 · **Recoverable:** 188.0495 ETH · *as of 2026-06-10*
 
 ## What this is
 This Ahoolee Token Sale (2017) sale did not reach its soft cap, so its on-chain `refund()` function is **permanently open**. Most contributors already refunded years ago; the addresses below never did. Each can still reclaim **their own deposit** today.
@@ -12,8 +12,8 @@ This Ahoolee Token Sale (2017) sale did not reach its soft cap, so its on-chain 
 - You can verify the contract + the exact call on Etherscan before signing.
 
 ## Safety attestation
-- Bytecode audit: **no DELEGATECALL / SELFDESTRUCT (immutable, not upgradeable, not destructible)**.
-- The only functions that move ETH are `refund()` (this claim) and an owner `withdraw()` that is **permanently blocked** (requires a soft-cap that can never be reached).
+- Code immutability: **no DELEGATECALL / SELFDESTRUCT (immutable, not upgradeable, not destructible)**.
+- The only functions that move ETH are the refund (this claim) and an owner withdraw that is **permanently blocked** (requires a soft-cap that can never be reached).
 - No ETH has left the contract since 2018; an automated scavenger that tried `drain()/sweep()/destroy()` extracted nothing (those functions don't exist).
 - The recovery was reproduced on a mainnet fork (the contract's real deployed code).
 
@@ -128,7 +128,7 @@ This Ahoolee Token Sale (2017) sale did not reach its soft cap, so its on-chain 
 | 106 | `0x77648fc7fcd82333f446a79ddc07a1c3084685e7` | 0.0100 |
 
 ## Verify everything yourself
-- Fork-proof + tooling (open source): `github.com/webmixgamer/white-hat-recovery-agent` *(make public before publishing this page)*
+- Fork-proof + tooling (open source): `github.com/webmixgamer/stuck-eth-recoveries`
 - Fork-proof test: `test/AhooleeRefund.t.sol`
 - This recovery is **owner-signs / no-custody**: we never hold or move your funds; you sign your own claim.
 

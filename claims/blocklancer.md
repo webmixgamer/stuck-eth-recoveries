@@ -50,7 +50,7 @@ The **Blocklancer (LNC)** token sale (2017) did not reach its minimum cap, so it
 | 28 | `0xcb12b8a675e652296a8134e70f128521e633b327` | 0.0100 |
 
 ## Verify everything yourself
-- Fork-proof + tooling (open source): `github.com/webmixgamer/white-hat-recovery-agent` *(make public before publishing this page)*
+- Fork-proof + tooling (open source): `github.com/webmixgamer/stuck-eth-recoveries`
 - Fork-proof test: `test/BlocklancerRefund.t.sol`
 - This recovery is **owner-signs / no-custody**: we never hold or move your funds; you sign your own claim.
 

@@ -1,6 +1,6 @@
 # Verified unclaimed-refund claims — Jincor Token ICO (2017)
 
-**Contract:** [`0xB3B33F59174f2eF62167770E4C9cAbaA3879eB5d`](https://etherscan.io/address/0xB3B33F59174f2eF62167770E4C9cAbaA3879eB5d) · **Stuck balance:** 19.0616 ETH · **Unclaimed owners:** 48 · **Recoverable:** 19.0616 ETH · *as of 2026-06-02*
+**Contract:** [`0xB3B33F59174f2eF62167770E4C9cAbaA3879eB5d`](https://etherscan.io/address/0xB3B33F59174f2eF62167770E4C9cAbaA3879eB5d) · **Stuck balance:** 19.0616 ETH · **Unclaimed owners:** 48 · **Recoverable:** 19.0616 ETH · *as of 2026-06-10*
 
 ## What this is
 This Jincor Token ICO (2017) sale did not reach its soft cap, so its on-chain `refund()` function is **permanently open**. Most contributors already refunded years ago; the addresses below never did. Each can still reclaim **their own deposit** today.
@@ -12,8 +12,8 @@ This Jincor Token ICO (2017) sale did not reach its soft cap, so its on-chain `r
 - You can verify the contract + the exact call on Etherscan before signing.
 
 ## Safety attestation
-- Bytecode audit: **no DELEGATECALL / SELFDESTRUCT (immutable, not upgradeable, not destructible)**.
-- The only functions that move ETH are `refund()` (this claim) and an owner `withdraw()` that is **permanently blocked** (requires a soft-cap that can never be reached).
+- Code immutability: **no DELEGATECALL / SELFDESTRUCT (immutable, not upgradeable, not destructible)**.
+- The only functions that move ETH are the refund (this claim) and an owner withdraw that is **permanently blocked** (requires a soft-cap that can never be reached).
 - No ETH has left the contract since 2018; an automated scavenger that tried `drain()/sweep()/destroy()` extracted nothing (those functions don't exist).
 - The recovery was reproduced on a mainnet fork (the contract's real deployed code).
 
@@ -70,7 +70,7 @@ This Jincor Token ICO (2017) sale did not reach its soft cap, so its on-chain `r
 | 48 | `0x4abd2fbcf96fe989f3c8f60d766588b1a0ae427b` | 0.1000 |
 
 ## Verify everything yourself
-- Fork-proof + tooling (open source): `github.com/webmixgamer/white-hat-recovery-agent` *(make public before publishing this page)*
+- Fork-proof + tooling (open source): `github.com/webmixgamer/stuck-eth-recoveries`
 - Fork-proof test: `test/JincorRefund.t.sol`
 - This recovery is **owner-signs / no-custody**: we never hold or move your funds; you sign your own claim.
 

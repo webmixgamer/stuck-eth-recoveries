@@ -101,7 +101,7 @@ The **DigiPulse (DGT)** token sale ran in August 2017 and raised roughly 1,920 E
 | 79 | `0xe1ae08fd0e212be0d7da0e748fce6b313c8f2e7a` | 0.0050 |
 
 ## Verify everything yourself
-- Fork-proof + tooling (open source): `github.com/webmixgamer/white-hat-recovery-agent` *(make public before publishing this page)*
+- Fork-proof + tooling (open source): `github.com/webmixgamer/stuck-eth-recoveries`
 - Fork-proof test: `test/DigiPulseRefund.t.sol`
 - This recovery is **owner-signs / no-custody**: we never hold or move your funds; you sign your own claim.
 

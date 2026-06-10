@@ -79,7 +79,7 @@ The **QCOToken** (Quantum1Net) sale ended in the **Aborted** state, so its on-ch
 | 57 | `0x4e31680118f9267689a6cabb49bef79ef8d6032a` | 0.0020 |
 
 ## Verify everything yourself
-- Fork-proof + tooling (open source): `github.com/webmixgamer/white-hat-recovery-agent` *(make public before publishing this page)*
+- Fork-proof + tooling (open source): `github.com/webmixgamer/stuck-eth-recoveries`
 - Fork-proof test: `test/QCOTokenRefund.t.sol`
 - This recovery is **owner-signs / no-custody**: we never hold or move your funds; you sign your own claim.
 

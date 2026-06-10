@@ -54,7 +54,7 @@ The **DirectCrypt** token presale (2017) did not reach its soft cap, so its on-c
 | 32 | `0x8b8a11d2f3ebe09a00e746c1b8809397632cbfc1` | 0.1060 |
 
 ## Verify everything yourself
-- Fork-proof + tooling (open source): `github.com/webmixgamer/white-hat-recovery-agent` *(make public before publishing this page)*
+- Fork-proof + tooling (open source): `github.com/webmixgamer/stuck-eth-recoveries`
 - Fork-proof test: `test/DirectCryptRefund.t.sol`
 - This recovery is **owner-signs / no-custody**: we never hold or move your funds; you sign your own claim.
 

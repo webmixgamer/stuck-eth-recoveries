@@ -1,0 +1,17 @@
+# Foundry configuration — the fork / proof-on-fork harness (DESIGN.md §3, Stage 3).
+# Docs: https://book.getfoundry.sh/reference/config/
+
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+libs = ["lib"]
+
+# Named RPC endpoints. Tests reference these via vm.rpcUrl("mainnet").
+# The real URL (with your Alchemy key) lives in .env as ALCHEMY_RPC_URL and is
+# NEVER committed — see .gitignore. Foundry auto-loads .env.
+[rpc_endpoints]
+mainnet = "${ALCHEMY_RPC_URL}"
+# Local anvil node — used by the Step-3 synthetic generalization proof
+# (deploy a fresh target locally, then fork it exactly like mainnet).
+local = "http://127.0.0.1:8545"

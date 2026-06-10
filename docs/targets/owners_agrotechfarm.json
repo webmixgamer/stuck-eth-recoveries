@@ -1,0 +1,87 @@
+{
+  "contract": "0x3fd30f3e1fbf4f3ea6bdf3e3bb11826266708869",
+  "name": "agrotechfarm",
+  "block": "latest",
+  "live_balance_wei": 16691711126000000000,
+  "live_balance_eth": 16.691711126,
+  "n_contributors": 24,
+  "n_unclaimed": 12,
+  "total_unclaimed_wei": 16691711126000000000,
+  "total_unclaimed_eth": 16.691711126,
+  "eoa_recoverable_eth": 16.691711126,
+  "n_contract_owners": 0,
+  "unclaimed": [
+    {
+      "address": "0xa12b9bbfdba29e8bac265ad89350ce1d06cacfde",
+      "wei": 11580000000000000000,
+      "eth": 11.58,
+      "eoa": true
+    },
+    {
+      "address": "0x6d3fcf513c746fa1ba2c7ae9967b75e502764f01",
+      "wei": 2950000000000000000,
+      "eth": 2.95,
+      "eoa": true
+    },
+    {
+      "address": "0x4229d49f97f5f95e9f78dd7d08c638a3746b46f5",
+      "wei": 1000000000000000000,
+      "eth": 1.0,
+      "eoa": true
+    },
+    {
+      "address": "0xd48f8698d2fe0fd730659d14e07d81fbbc8afec4",
+      "wei": 500000000000000000,
+      "eth": 0.5,
+      "eoa": true
+    },
+    {
+      "address": "0xe05abc068339fdc37715d6d2d2f38bf8eddd9949",
+      "wei": 250000000000000000,
+      "eth": 0.25,
+      "eoa": true
+    },
+    {
+      "address": "0x650dda3afc3432eae436c5992feed4a18aeffc2c",
+      "wei": 119711126000000000,
+      "eth": 0.119711126,
+      "eoa": true
+    },
+    {
+      "address": "0xfd34741aefc59ecfe1996c2edbd2788317e78e52",
+      "wei": 100000000000000000,
+      "eth": 0.1,
+      "eoa": true
+    },
+    {
+      "address": "0x7f6174f29fb3f5f82840addb2b93b4e9371b6e69",
+      "wei": 100000000000000000,
+      "eth": 0.1,
+      "eoa": true
+    },
+    {
+      "address": "0x6ed5c67192569e1c24e54b936a66f94fd8c7e350",
+      "wei": 50000000000000000,
+      "eth": 0.05,
+      "eoa": true
+    },
+    {
+      "address": "0x0df6591305929e463e8bacfd763beb63c06e835d",
+      "wei": 20000000000000000,
+      "eth": 0.02,
+      "eoa": true
+    },
+    {
+      "address": "0x274da2475bed7791751da5d615f64fa30da16e8f",
+      "wei": 12000000000000000,
+      "eth": 0.012,
+      "eoa": true
+    },
+    {
+      "address": "0x3efc75999d8e695eda5a38348d93407c5355cee0",
+      "wei": 10000000000000000,
+      "eth": 0.01,
+      "eoa": true
+    }
+  ]
+}

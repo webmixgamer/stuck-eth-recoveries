@@ -1,0 +1,290 @@
+{
+  "target": "luckchemy",
+  "contract": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+  "recovery_method": "refund()",
+  "recovery_calldata": "0x590e1ae3",
+  "fork_proof": "test/LuckchemyRefund.t.sol",
+  "snapshot_block": "latest",
+  "live_balance_eth": 10.767637830000002,
+  "total_recoverable_eth": 10.767637829999996,
+  "n_owners": 23,
+  "no_custody_note": "The agent never signs or sends. Each owner signs the single transaction above from their OWN address; refund() returns only that caller's deposit (verified not front-runnable). LOW legal tier.",
+  "packages": [
+    {
+      "rightful_owner": "0x932dd29fbd1d1bff4c16704f8eae879f4e968ba5",
+      "recoverable_eth": 4.0,
+      "recoverable_wei": 4000000000000000000,
+      "transaction_to_sign": {
+        "from": "0x932dd29fbd1d1bff4c16704f8eae879f4e968ba5",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x264d1405922873f8bf61f55c884eb6c77c52f469",
+      "recoverable_eth": 2.0,
+      "recoverable_wei": 2000000000000000000,
+      "transaction_to_sign": {
+        "from": "0x264d1405922873f8bf61f55c884eb6c77c52f469",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x1b6e9678f05daecc76e35c3351e80dd298bf1852",
+      "recoverable_eth": 1.0,
+      "recoverable_wei": 1000000000000000000,
+      "transaction_to_sign": {
+        "from": "0x1b6e9678f05daecc76e35c3351e80dd298bf1852",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x9b6852065ef53d565b9d0fdb10ad2b7238ccfbcf",
+      "recoverable_eth": 0.5,
+      "recoverable_wei": 500000000000000000,
+      "transaction_to_sign": {
+        "from": "0x9b6852065ef53d565b9d0fdb10ad2b7238ccfbcf",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x758221db28e5488fc0e74d8210cf4540038e5f50",
+      "recoverable_eth": 0.40468434,
+      "recoverable_wei": 404684340000000000,
+      "transaction_to_sign": {
+        "from": "0x758221db28e5488fc0e74d8210cf4540038e5f50",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x570c33de80290e960448bbcbc7ab54e84842ea7b",
+      "recoverable_eth": 0.4,
+      "recoverable_wei": 400000000000000000,
+      "transaction_to_sign": {
+        "from": "0x570c33de80290e960448bbcbc7ab54e84842ea7b",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x130f4b1cf7679231ce2a9e22fe5b0677dc0b20e2",
+      "recoverable_eth": 0.3,
+      "recoverable_wei": 300000000000000000,
+      "transaction_to_sign": {
+        "from": "0x130f4b1cf7679231ce2a9e22fe5b0677dc0b20e2",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x89522015a6d1030a1268a68e7c96cdba66b232be",
+      "recoverable_eth": 0.3,
+      "recoverable_wei": 300000000000000000,
+      "transaction_to_sign": {
+        "from": "0x89522015a6d1030a1268a68e7c96cdba66b232be",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x9e315934ead236a14031143a04329315c3246eda",
+      "recoverable_eth": 0.2,
+      "recoverable_wei": 200000000000000000,
+      "transaction_to_sign": {
+        "from": "0x9e315934ead236a14031143a04329315c3246eda",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x497e3c800adb758dff17a1864708e495b7e0339a",
+      "recoverable_eth": 0.2,
+      "recoverable_wei": 200000000000000000,
+      "transaction_to_sign": {
+        "from": "0x497e3c800adb758dff17a1864708e495b7e0339a",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x0fa5ce569135bf99b0a6c1224bd06268f506b43b",
+      "recoverable_eth": 0.18795349,
+      "recoverable_wei": 187953490000000000,
+      "transaction_to_sign": {
+        "from": "0x0fa5ce569135bf99b0a6c1224bd06268f506b43b",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x352bc8e2f84db33748c367917e455a44801afe29",
+      "recoverable_eth": 0.15,
+      "recoverable_wei": 150000000000000000,
+      "transaction_to_sign": {
+        "from": "0x352bc8e2f84db33748c367917e455a44801afe29",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0xa3997c4daedf4142bf4a45e360f80b0aca167de1",
+      "recoverable_eth": 0.12,
+      "recoverable_wei": 120000000000000000,
+      "transaction_to_sign": {
+        "from": "0xa3997c4daedf4142bf4a45e360f80b0aca167de1",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0xe8d51bf1c9ad9b97d8982ef77106859b00c9d415",
+      "recoverable_eth": 0.105,
+      "recoverable_wei": 105000000000000000,
+      "transaction_to_sign": {
+        "from": "0xe8d51bf1c9ad9b97d8982ef77106859b00c9d415",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0xfac61fe40f41d3bc824a9caa4ac4ecc3be2215b1",
+      "recoverable_eth": 0.1,
+      "recoverable_wei": 100000000000000000,
+      "transaction_to_sign": {
+        "from": "0xfac61fe40f41d3bc824a9caa4ac4ecc3be2215b1",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0xd9cf925d87fa86aac4d175d5ff746e6d271893d3",
+      "recoverable_eth": 0.1,
+      "recoverable_wei": 100000000000000000,
+      "transaction_to_sign": {
+        "from": "0xd9cf925d87fa86aac4d175d5ff746e6d271893d3",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x6e14085bb5d088e466c68c7aa438c3eae2992afa",
+      "recoverable_eth": 0.1,
+      "recoverable_wei": 100000000000000000,
+      "transaction_to_sign": {
+        "from": "0x6e14085bb5d088e466c68c7aa438c3eae2992afa",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x90ba6027fca547e16c14b2d622a5a497af73fb97",
+      "recoverable_eth": 0.1,
+      "recoverable_wei": 100000000000000000,
+      "transaction_to_sign": {
+        "from": "0x90ba6027fca547e16c14b2d622a5a497af73fb97",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0xc79cfdb2ba7524a246105bcf0def749e627dfeac",
+      "recoverable_eth": 0.1,
+      "recoverable_wei": 100000000000000000,
+      "transaction_to_sign": {
+        "from": "0xc79cfdb2ba7524a246105bcf0def749e627dfeac",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0xcc2900166828d3b249aa126727c2f3fd918aae2c",
+      "recoverable_eth": 0.1,
+      "recoverable_wei": 100000000000000000,
+      "transaction_to_sign": {
+        "from": "0xcc2900166828d3b249aa126727c2f3fd918aae2c",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0xc08c067587602180a1633b559bdca85299a6ba99",
+      "recoverable_eth": 0.1,
+      "recoverable_wei": 100000000000000000,
+      "transaction_to_sign": {
+        "from": "0xc08c067587602180a1633b559bdca85299a6ba99",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x103938c8a8080bad2a718cd194db52d3d13d3397",
+      "recoverable_eth": 0.1,
+      "recoverable_wei": 100000000000000000,
+      "transaction_to_sign": {
+        "from": "0x103938c8a8080bad2a718cd194db52d3d13d3397",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    },
+    {
+      "rightful_owner": "0x23e4dc44c4103f33347e8a356740dbdf98084e3b",
+      "recoverable_eth": 0.1,
+      "recoverable_wei": 100000000000000000,
+      "transaction_to_sign": {
+        "from": "0x23e4dc44c4103f33347e8a356740dbdf98084e3b",
+        "to": "0x18777aec0b231d1a4a9c66b51253088a03affdfc",
+        "value": "0",
+        "data": "0x590e1ae3",
+        "gas": 120000
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "contract": "0x1bb28e79f2482df6bf60efc7a33365703bcf1536",
+  "name": "hodlethereum",
+  "block": "latest",
+  "live_balance_wei": 22528081000000000000,
+  "live_balance_eth": 22.528081,
+  "n_contributors": 37,
+  "n_unclaimed": 11,
+  "total_unclaimed_wei": 22528081000000000000,
+  "total_unclaimed_eth": 22.528081,
+  "eoa_recoverable_eth": 22.528081,
+  "n_contract_owners": 0,
+  "unclaimed": [
+    {
+      "address": "0xf11cc2152d3e1e44825eb4cc71eac0e9a6f5f2b1",
+      "wei": 20000000000000000000,
+      "eth": 20.0,
+      "eoa": true
+    },
+    {
+      "address": "0x25e52afe36b12a136df044e026f7aef22dd93b7a",
+      "wei": 1000000000000000000,
+      "eth": 1.0,
+      "eoa": true
+    },
+    {
+      "address": "0x4812505f744b14813d27d641c8af4d74f13c92bf",
+      "wei": 1000000000000000000,
+      "eth": 1.0,
+      "eoa": true
+    },
+    {
+      "address": "0xfdb33f8ac7ce72d7d4795dd8610e323b4c122fbb",
+      "wei": 330000000000000000,
+      "eth": 0.33,
+      "eoa": true
+    },
+    {
+      "address": "0x06603aae348bea45a9cc23ade04296301c1d781d",
+      "wei": 100000000000000000,
+      "eth": 0.1,
+      "eoa": true
+    },
+    {
+      "address": "0x8f231e179727784b83351044b272dfb4c4615634",
+      "wei": 40000000000000000,
+      "eth": 0.04,
+      "eoa": true
+    },
+    {
+      "address": "0xcd8e71a93b3cc8417c0dff1ed66d876abba7f9ef",
+      "wei": 30000000000000000,
+      "eth": 0.03,
+      "eoa": true
+    },
+    {
+      "address": "0x7c2c647579f3efcf1ac86751ea7b130712add7a9",
+      "wei": 10000000000000000,
+      "eth": 0.01,
+      "eoa": true
+    },
+    {
+      "address": "0xb9109ab4dcf8ac17f9d7db248dcdb60bd45b77d8",
+      "wei": 10000000000000000,
+      "eth": 0.01,
+      "eoa": true
+    },
+    {
+      "address": "0x8bb5047103cb24da5b5ea9848daa1b9fa2a9bb66",
+      "wei": 8080000000000000,
+      "eth": 0.00808,
+      "eoa": true
+    },
+    {
+      "address": "0x16882f55ef843d062ce799805af50cda4240be52",
+      "wei": 1000000000000,
+      "eth": 1e-06,
+      "eoa": true
+    }
+  ]
+}

@@ -12,8 +12,7 @@ the owner signs ONE transaction (refund(), value 0) FROM their own address that
 sends THEM their ETH. Reads owners_<name>.json + package_<name>.json (+ SAFETY md).
 
 Output is written to claims/<name>.md (a tracked, public-facing dir) + claims/README.md.
-NOTE: publishing requires the verification artifacts (fork-proof / repo) to be PUBLIC;
-the repo is currently private — see the "Verify" section placeholder.
+The verification artifacts (fork-proofs / tooling) are public at github.com/webmixgamer/stuck-eth-recoveries.
 
 Usage: python3 scripts/make_claims_page.py --name ahoolee --etherscan-url https://etherscan.io/address/0x..
 """

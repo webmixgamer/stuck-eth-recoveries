@@ -4,7 +4,7 @@ Source: free BigQuery `balances⨝contracts` (>10 ETH, created <2019-07) → `do
 (1019 rows). Pipeline: `scan_addresses.py --only-new` → 937 candidates → **359 verified-legacy** →
 **18 open-refund/HONG survivors** → adversarial triage workflow (27 agents: classify + independent refute).
 
-Raw: `docs/targets/discovery_report.json` (sweep) + `docs/targets/discovery_triage_result.json` (triage).
+Per-target safety audits, owner lists, and recovery packages are in `docs/targets/`.
 
 ## Verdict summary
 | Contract | Address | ETH | Dormant | Class | Verify | Note |

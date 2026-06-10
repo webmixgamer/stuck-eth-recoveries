@@ -35,6 +35,11 @@ second call can't double-claim, that a non-contributor gets nothing, and that **
 cannot drain** the funds. The four non-★ contracts are already on ForgottenETH; their proofs are
 included for completeness.
 
+The Owners column counts all unclaimed addresses with a refundable ledger entry. The ForgottenETH
+contribution in [`contrib/forgotten-eth/`](contrib/forgotten-eth/) filters these further to
+**self-claimable EOAs** (209 owners, ~261.7 ETH) — excluding contracts and exchange/service hot
+wallets (e.g. Bittrex, Poloniex) whose deposits no end user can claim.
+
 ## Verify it yourself
 
 ```bash

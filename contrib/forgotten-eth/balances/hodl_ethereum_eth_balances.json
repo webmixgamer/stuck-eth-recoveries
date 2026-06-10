@@ -6,7 +6,7 @@
   "addresses_with_balance": 11,
   "coverage_pct": 100.0,
   "scan_date": "2026-06-10 00:00:00 UTC",
-  "description": "2017 time-locked savings vault. Each depositor's ETH was credited to hodlers[] and became reclaimable after partyTime (1596067200 = 2020-07-30, long past) via party(). No owner/admin/pause/sweep -- fully immutable. 11 depositors never withdrew. (Distinct contract from the existing just_hodl_it entry.)",
+  "description": "2017 time-locked savings vault. Each depositor's ETH was credited to hodlers[] and became reclaimable after partyTime (1596067200 = 2020-07-30, long past) via party(). No owner/admin/pause/sweep -- fully immutable. (Distinct contract from the existing just_hodl_it entry.) 11 self-claimable contributors are unclaimed (contracts and exchange-deposit addresses excluded).",
   "balances": {
     "0xf11cc2152d3e1e44825eb4cc71eac0e9a6f5f2b1": 20.0,
     "0x25e52afe36b12a136df044e026f7aef22dd93b7a": 1.0,

@@ -1,4 +1,4 @@
-# Add 6 fork-verified failed-ICO refund vaults (~276 ETH, 217 addresses)
+# Add 6 fork-verified failed-ICO refund vaults (~262 ETH, 209 addresses)
 
 Six 2016–2018 contracts where stuck ETH is recoverable by each original contributor calling a **normal public refund function that returns only their own deposit** — the same class as the existing OpenZeppelin RefundableCrowdsale entries (Vuepay, GavCoin, …). None are on the current registry. Every one is reproduced on a mainnet fork and safety-audited; this PR adds the `protocols.json` entries + `data/balances/*` files.
 
@@ -11,10 +11,10 @@ For each contract: is the ETH recoverable **today** by the original depositor wi
 ## Executive summary
 
 - **What the evidence supports:** each contract exposes a self-paying refund (`refund()`/`refundEther()`/`requestRefund()`/`party()`) that pays `msg.sender` exactly their own recorded deposit and zeroes it (CEI). A real, unclaimed contributor reclaiming their funds is fork-proven for all six; the only owner/admin ETH-out path is gated permanently shut (proven by a reverting call), so none is owner-drainable.
-- **Strongest evidence:** committed Foundry tests that prank a real unclaimed address and assert exact ETH movement + idempotence + owner-can't-drain (31 tests, all green). Per-owner amounts reconcile to the live contract balance.
-- **Practical impact:** 217 self-claimable EOAs, ~275.8 ETH, invisible to portfolio trackers.
-- **What it does NOT prove:** that the owners are reachable or will act; that *every* historical contributor is included (lists are the currently-unclaimed, EOA-only set); legitimacy beyond extractability (mitigated — each payout is the caller's own deposit).
-- **Evidence still required:** independent re-verification on your pipeline; holder-list filtering to your standard (I excluded contracts/non-EOAs; you may also drop exchange-deposit addresses).
+- **Strongest evidence:** committed Foundry tests that prank a real unclaimed address and assert exact ETH movement + idempotence + owner-can't-drain (31 tests, all green). Each listed amount is that address's on-chain ledger entry; every per-file total is ≤ the live contract balance.
+- **Practical impact:** 209 self-claimable EOAs, ~261.7 ETH, invisible to portfolio trackers.
+- **What it does NOT prove:** that the owners are reachable or will act; that *every* historical contributor is included (lists are the currently-unclaimed, self-claimable-EOA set; exchange-deposit addresses excluded); legitimacy beyond extractability (mitigated — each payout is the caller's own deposit).
+- **Evidence still required:** independent re-verification on your pipeline. Holder lists are already filtered to your standard — contracts, non-EOAs, and exchange/service hot wallets (Bittrex, Poloniex + 4 service-scale addresses, by Etherscan name-tag / exchange-scale nonce) are excluded.
 
 ## Deployed surface
 
@@ -38,7 +38,7 @@ For each contract: is the ETH recoverable **today** by the original depositor wi
 
 - **ZTCrowdsale** is **multi_step** (`multi_step:true`): the stage is still `InProgress`, so the one-time, **permissionless** `endCrowdsale()` (now past `end`, no owner gate) must run before refunds open. Per-owner amounts read from private storage (slot 23); the ~7 ETH of pre-ICO deposits that were auto-forwarded to the beneficiary are correctly excluded, and the 11 entitlements reconcile to the balance.
 - **DirectCrypt**: the owner can `halt()` to pause refunds (a reversible griefing lever, **not** a drain); refunds are confirmed open at this snapshot.
-- **DigiPulse**: `total_eth_in_balances` (97.08) is < contract balance (100.58); the ~3.5 ETH surplus has no ledger entry and is not claimable via `refundEther()`.
+- **DigiPulse**: `total_eth_in_balances` (87.24, 75 EOAs) is < the 100.58 balance — ~3.5 ETH is unclaimable residual (no ledger entry) and ~9.8 ETH sits at excluded exchange-deposit addresses.
 - **hodlEthereum** is a distinct contract from the existing `just_hodl_it` entry (different address). Suggested category `other`.
 
 ## Reproduction
@@ -53,7 +53,7 @@ Each test is one file (`DigiPulseRefund.t.sol`, `DirectCryptRefund.t.sol`, …) 
 ## Notes for integration
 
 - I left `index_shards/`, `table_meta/`, `total.json` for your pipeline to regenerate (per #12).
-- Balances are EOA-only and `balance_source:"token"` (precomputed, like the other ICO entries); 4 of the 6 also have a live public getter if you prefer `"eth"` for the multicall CLI.
+- Balances are self-claimable-EOA-only (exchange-deposit addresses excluded) and `balance_source:"token"` (precomputed, like the other ICO entries); 5 of the 6 also have a live public getter (DigiPulse `getBalanceInEth`, DirectCrypt `deposited`, QCOToken `ethPossibleRefunds`, hodlEthereum `hodlers`, Blocklancer `EtherBalanceOf`) if you prefer `"eth"` for the multicall CLI.
 - Happy to split this into per-contract PRs or adjust keys/categories to your conventions.
 
 ## References

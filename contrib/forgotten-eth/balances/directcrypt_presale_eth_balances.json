@@ -6,7 +6,7 @@
   "addresses_with_balance": 32,
   "coverage_pct": 100.0,
   "scan_date": "2026-06-10 00:00:00 UTC",
-  "description": "Failed 2017 DRCT presale (soft cap never reached). refund() returns each contributor their own deposited[] balance while softCapReached==false. Owner cannot drain (withdraw needs softCap); owner can halt() refunds (reversible pause, not a drain) -- refunds confirmed open on a fork. 32 contributors never claimed.",
+  "description": "Failed 2017 DRCT presale (soft cap never reached). refund() returns each contributor their own deposited[] balance while softCapReached==false. Owner cannot drain (withdraw needs softCap); owner can halt() refunds (reversible pause, not a drain) -- refunds confirmed open on a fork. 32 self-claimable contributors are unclaimed (contracts and exchange-deposit addresses excluded).",
   "balances": {
     "0x05e4a5f1a824abeb0bd2617ce2b27f8555045f88": 31.99906508,
     "0x3c144e78abdc8aae5a69f0064db066de4b48f00c": 4.78094595,

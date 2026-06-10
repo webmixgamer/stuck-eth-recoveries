@@ -6,7 +6,7 @@
   "addresses_with_balance": 11,
   "coverage_pct": 100.0,
   "scan_date": "2026-06-10 00:00:00 UTC",
-  "description": "Failed 2017 ZeroTraffic crowdsale (raised ~21 ETH vs a 20,000 ETH minimum). Permissionless 2-step: anyone calls endCrowdsale() (now past end, no owner gate) to open the Ended stage, then each contributor refund()s their own balances[] deposit. withdraw() needs raised>=min (never) -- company cannot drain. 11 contributors never claimed (per-owner amounts read from private storage slot 23; pre-ICO deposits were auto-forwarded out and correctly excluded -- entitlements reconcile to the balance).",
+  "description": "Failed 2017 ZeroTraffic crowdsale (raised ~21 ETH vs a 20,000 ETH minimum). Permissionless 2-step: anyone calls endCrowdsale() (now past end, no owner gate) to open the Ended stage, then each contributor refund()s their own balances[] deposit. withdraw() needs raised>=min (never) -- company cannot drain. Per-owner amounts read from private storage slot 23; pre-ICO deposits were auto-forwarded out and excluded. 11 self-claimable contributors are unclaimed (contracts and exchange-deposit addresses excluded).",
   "balances": {
     "0xfa1abcce17531a2e75e176c5e583fec226c79206": 12.5,
     "0xacce2fe2e119959849ba5680b00f50251d66e0d1": 5.0,

@@ -6,7 +6,7 @@
   "addresses_with_balance": 56,
   "coverage_pct": 99.99,
   "scan_date": "2026-06-10 00:00:00 UTC",
-  "description": "Quantum1Net QCO sale ended in the Aborted state (terminal). requestRefund() returns each contributor their own ethPossibleRefunds[] deposit. Owner drain path needs the Operational state, unreachable from Aborted. 57 contributors never claimed.",
+  "description": "Quantum1Net QCO sale ended in the Aborted state (terminal). requestRefund() returns each contributor their own ethPossibleRefunds[] deposit. Owner drain path needs the Operational state, unreachable from Aborted. 56 self-claimable contributors are unclaimed (contracts and exchange-deposit addresses excluded).",
   "balances": {
     "0x0f929995c0c8a00e212df802f57b5f63d7640fe7": 11.4,
     "0xa2cc3fd7bc2980e0b6362222b75baaec3ba7b973": 2.65375907,

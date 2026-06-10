@@ -7,8 +7,8 @@ is reproducible on Etherscan against the contract's real deployed bytecode.
 
 This is a contribution to **[ForgottenETH](https://forgotteneth.com)** ([repo](https://github.com/q84c6tsm95-create/forgotten-eth)) — the
 reference registry for stuck on-chain ETH. Six of the targets below are **net-new** (not previously
-on ForgottenETH), found by a discovery sweep beyond its curated set; the contribution data is in
-[`contrib/forgotten-eth/`](contrib/forgotten-eth/).
+on ForgottenETH), found by a discovery sweep beyond its curated set, and contributed to it in
+[ForgottenETH PR #15](https://github.com/q84c6tsm95-create/forgotten-eth/pull/15).
 
 > Same ethos as ForgottenETH: **no custody, owner signs, reproducible on Etherscan.** A fork-proof
 > is the sole oracle — nothing here is asserted that a `forge test` against live mainnet state can't show.
@@ -36,9 +36,9 @@ cannot drain** the funds. The four non-★ contracts are already on ForgottenETH
 included for completeness.
 
 The Owners column counts all unclaimed addresses with a refundable ledger entry. The ForgottenETH
-contribution in [`contrib/forgotten-eth/`](contrib/forgotten-eth/) filters these further to
-**self-claimable EOAs** (209 owners, ~261.7 ETH) — excluding contracts and exchange/service hot
-wallets (e.g. Bittrex, Poloniex) whose deposits no end user can claim.
+contribution ([PR #15](https://github.com/q84c6tsm95-create/forgotten-eth/pull/15)) filters these
+further to **self-claimable EOAs** (209 owners, ~261.7 ETH) — excluding contracts and exchange/service
+hot wallets (e.g. Bittrex, Poloniex) whose deposits no end user can claim.
 
 ## Verify it yourself
 
